@@ -1,0 +1,14 @@
+body{
+  display: grid;
+  grid-template-areas: 
+  "cabecalho  cabecalho  cabecalho"
+  "container  container  container"
+  "rodape     rodape     rodape";
+  grid-template-columns: 1fr 2fr 1fr;
+
+}
+
+.cabecalho { grid-area: cabecalho; }
+.container { grid-area: container; }
+.rodape { grid-area: rodape; }
+

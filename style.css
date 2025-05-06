@@ -1,0 +1,16 @@
+/*Reset na box model*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #F6F6F6;
+  color: #000000;
+}
+
+.sigla-destaque {
+  color: #fbcb2c;
+}
