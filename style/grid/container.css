@@ -1,0 +1,22 @@
+.container {
+  grid-area: container;
+  display: grid;
+  grid-template-areas: 
+  "foto-esq info-modalidade foto-dir";
+  grid-template-columns: 1fr 1.25fr 1fr;
+}
+
+.foto-esq {
+  grid-area: foto-esq;
+}
+
+.foto-dir {
+  grid-area: foto-dir;
+}
+
+.info-modalidade {
+  grid-area: info-modalidade;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+}

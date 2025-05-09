@@ -6,38 +6,57 @@
 }
 
 body {
-  height: 100vh;
+  height: 120vh;
   box-sizing: border-box;
   background-color: #F6F6F6;
   color: #000000;
+  /*Grid da página*/
+  display: grid;
+  grid-template-areas:
+    "header"
+    "container"
+    "footer";
+  grid-template-rows: 1fr 1.8fr 1fr;
 }
 
-.sigla-destaque {
-  color: #fbcb2c;
+.header { grid-area: header; }
+
+.titulo-modalidade{
+  font-size: 30px;  
+  text-align: center;
 }
 
 .foto-esq {
   width: 100%;          /* Largura definida no seu style inline */
-  height: 100%px;         /* Altura definida no seu style inline */
+  height: 70%;         /* Altura definida no seu style inline */
   object-fit: cover;     /* Garante que a imagem cubra o espaço sem distorcer */
   object-position: 50% 50%; /* Centraliza o foco da imagem */
 }
 
 .foto-dir {
   width: 100%;          /* Largura definida no seu style inline */
-  height: 100%;         /* Altura definida no seu style inline */
+  height: 70%;         /* Altura definida no seu style inline */
   object-fit: cover;     /* Garante que a imagem cubra o espaço sem distorcer */
   object-position: 50% 50%; /* Centraliza o foco da imagem */
 }
 
 .info-modalidade {
-  width: 596px;    /* Largura específica */
-  height: 619px;   /* Altura específica */
+  width: 100%;    /* Largura específica */
+  height: 70%;   /* Altura específica */
 }
 
-.titulo-modalidade{
-  font-size: 30px;  
+.sigla-modalidade {
+  color: #fbcb2c;
   text-align: center;
+}
+
+.desc-modalidade {
+  text-align: center;
+}
+
+.texto-modalidade {
+  text-align: center;
+  width: 70%;
 }
 
 .logo-CAASO {
@@ -47,12 +66,8 @@ body {
 
 .horarios {
   background-color: #FAE32D;
-  text-align: center; /* Centraliza todo o conteúdo */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza horizontalmente */
-  justify-content: center; /* Centraliza verticalmente (se a seção tiver altura definida) */
-}  
+  text-align: center;
+}
 
 .horarios ul {
   list-style-type: none; /* Remove as bolinhas */
@@ -67,10 +82,6 @@ body {
 .responsaveis {
   background-color: #fbcb2c;
   text-align: center; /* Centraliza todo o conteúdo */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza horizontalmente */
-  justify-content: center; /* Centraliza verticalmente (se a seção tiver altura definida) */
 }
 
 .responsaveis ul {
@@ -87,8 +98,4 @@ body {
 .midia {
   background-color: #FAB12D;
   text-align: center; /* Centraliza todo o conteúdo */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza horizontalmente */
-  justify-content: center; /* Centraliza verticalmente (se a seção tiver altura definida) */
 }

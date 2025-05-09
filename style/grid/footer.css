@@ -1,0 +1,53 @@
+.footer {
+  height: auto;
+  grid-area: footer;
+  display: grid;
+  grid-template-areas: 
+    ". horarios responsaveis midia .";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.horarios {
+  grid-area: horarios;
+  display: grid;
+  grid-template-rows: 30% auto;
+  justify-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente (se a seção tiver altura definida) */
+}  
+
+.horarios ul {
+  list-style-type: none; /* Remove as bolinhas */
+  padding: 0; /* Remove o padding padrão */
+  margin: 0; /* Remove a margem padrão */
+}
+
+.horarios li {
+  margin: 5px 0; /* Adiciona um pequeno espaço entre os itens */
+}
+
+.responsaveis {
+  grid-area: responsaveis;
+  display: grid;
+  grid-template-rows: 30% auto;
+  justify-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente (se a seção tiver altura definida) */
+}
+
+.responsaveis ul {
+  list-style-type: none; /* Remove as bolinhas */
+  padding: 0; /* Remove o padding padrão */
+  margin: 0; /* Remove a margem padrão */
+}
+
+.responsaveis li {
+  margin: 5px 0; /* Adiciona um pequeno espaço entre os itens */
+}
+
+
+.midia {
+  grid-area: midia;
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente (se a seção tiver altura definida) */
+}
