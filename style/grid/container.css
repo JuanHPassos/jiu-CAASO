@@ -17,6 +17,7 @@
 .info-modalidade {
   grid-area: info-modalidade;
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 80px auto auto;
   justify-items: center;
+  align-items: end;
 }

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./style/grid/footer.css">
   <link rel="stylesheet" href="./style/index.css">
   <link rel="stylesheet" href="./style/responsivo.css">
+  <script type="text/javascript" src="js/vunit.js"></script>
 </head>
 <body>
   <header class="header">
@@ -15,7 +16,7 @@
   </header>
 
   <main class="container">
-    <img class="foto-esq" src="Vini.jpg" alt="Foto do faixa Marrom Vinicius no Tusca" width="275" height="619" fetchpriority="high">
+    <img class="foto-esq" src="./img/Vini.jpg" alt="Foto do faixa Marrom Vinicius no Tusca "fetchpriority="high">
     
     <div class="info-modalidade">
       <section class="titulo-info-modalidade">
@@ -23,10 +24,10 @@
         <h2 class="desc-modalidade">Jiu-Jitsu, Arte Suave</h2>
       </section>
       <p class="texto-modalidade">O Jiu-Jitsu é a arte suave, uma arte marcial que utiliza alavancas e controle corporal para neutralizar o oponente, transformando técnica e inteligência em eficiência, mesmo contra adversários mais fortes. Mais do que isso, o Jiu-Jitsu é uma filosofia de vida. Além de técnicas, ensina valores como humildade, resiliência e respeito, transformando não só o corpo, mas também o caráter de quem o pratica.Paixão que se potencializa nos "soltinhos" e nas risadas durante os treinos. Venha conhecer nossa família! OSS!</p>
-      <img class="logo-CAASO" src="Logos - Atlética CAASO - 1.png" alt="Logo atlética CAASO">
+      <img class="logo-CAASO" src="./img/Logos - Atlética CAASO - 1.png" alt="Logo atlética CAASO">
     </div>
 
-    <img class="foto-dir" src="Lucas.jpg" alt="Foto do faixa roxa Lucas no Tusca" width="275" height="619" fetchpriority="high">
+    <img class="foto-dir" src="./img/Lucas.jpg" alt="Foto do faixa roxa Lucas no Tusca" fetchpriority="high">
   </main>
 
   <footer class="footer">
@@ -49,9 +50,19 @@
     <section class="midia">
       <h3>Rede Social</h3>
       <a href="https://www.instagram.com/caasojiujudo">
-        <img src="instagram-logo.avif" alt="Logo do insta iterativa, manda para o insta do jiu">
+        <img src="./img/instagram-logo.avif" alt="Logo do insta iterativa, manda para o insta do jiu">
       </a>
       <p>@caasojiujudo</p>
     </section>
   </footer>
+  <script>
+    new vUnit({
+      CSSMap: {
+        '.vh': {
+          property: 'height',
+          reference: 'vh'
+        }
+      }
+    }).init();
+  </script>
 </body>
