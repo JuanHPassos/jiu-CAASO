@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,4 +14,81 @@ body {
 
 .sigla-destaque {
   color: #fbcb2c;
+}
+
+.foto-esq {
+  width: 100%;          /* Largura definida no seu style inline */
+  height: 100%px;         /* Altura definida no seu style inline */
+  object-fit: cover;     /* Garante que a imagem cubra o espaço sem distorcer */
+  object-position: 50% 50%; /* Centraliza o foco da imagem */
+}
+
+.foto-dir {
+  width: 100%;          /* Largura definida no seu style inline */
+  height: 100%;         /* Altura definida no seu style inline */
+  object-fit: cover;     /* Garante que a imagem cubra o espaço sem distorcer */
+  object-position: 50% 50%; /* Centraliza o foco da imagem */
+}
+
+.info-modalidade {
+  width: 596px;    /* Largura específica */
+  height: 619px;   /* Altura específica */
+}
+
+.titulo-modalidade{
+  font-size: 30px;  
+  text-align: center;
+}
+
+.logo-CAASO {
+  width: 100px; 
+  height: 100px;
+}
+
+.horarios {
+  background-color: #FAE32D;
+  text-align: center; /* Centraliza todo o conteúdo */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente (se a seção tiver altura definida) */
+}  
+
+.horarios ul {
+  list-style-type: none; /* Remove as bolinhas */
+  padding: 0; /* Remove o padding padrão */
+  margin: 0; /* Remove a margem padrão */
+}
+
+.horarios li {
+  margin: 5px 0; /* Adiciona um pequeno espaço entre os itens */
+}
+
+.responsaveis {
+  background-color: #fbcb2c;
+  text-align: center; /* Centraliza todo o conteúdo */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente (se a seção tiver altura definida) */
+}
+
+.responsaveis ul {
+  list-style-type: none; /* Remove as bolinhas */
+  padding: 0; /* Remove o padding padrão */
+  margin: 0; /* Remove a margem padrão */
+}
+
+.responsaveis li {
+  margin: 5px 0; /* Adiciona um pequeno espaço entre os itens */
+}
+
+
+.midia {
+  background-color: #FAB12D;
+  text-align: center; /* Centraliza todo o conteúdo */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente (se a seção tiver altura definida) */
 }
